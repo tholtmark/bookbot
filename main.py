@@ -1,3 +1,5 @@
+from string import ascii_lowercase
+
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read().lower()
@@ -21,10 +23,8 @@ def word_counter(file_contents):
 def character_counter(file_contents):
     character_count = {}
     for i in file_contents:
-        if i in character_count:
-            character_count[i] += 1
-        else:
-            character_count[i] = 1
+        if i in ascii_lowercase:
+            character_count[i] = character_count.get(i, 0) + 1
     return character_count
 
 
