@@ -5,8 +5,7 @@ def main():
         file_contents = f.read().lower()
     #this takes the return of function word_counter and prints it via variable word_count
     word_count = word_counter(file_contents)
-    
-    
+        
     character_totals = character_counter(file_contents)
     sorted_chars = sort_dict_descending(character_totals)
     print("--- Begin report of books/frankenstein.txt ---")
@@ -47,9 +46,6 @@ def sort_dict_descending(character_totals):
         
     char_list.sort(reverse=True, key=sort_on)
     return char_list
-
-
-
       
  # This line tells Python to run main() when this file is run directly
 if __name__ == "__main__":
