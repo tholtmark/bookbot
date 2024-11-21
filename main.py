@@ -49,4 +49,5 @@ def sort_dict_descending(character_totals):
       
  # This line tells Python to run main() when this file is run directly
 if __name__ == "__main__":
+
     main() 
